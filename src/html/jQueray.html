@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<script src="JS/jquery-1.9.0.js"></script>
+	<script type="text/javascript">
+
+	
+		// $(document).ready(function()
+		// 		{
+		// 			var myDiv=$("#myDiv");
+		// 			myDiv.css("font-size","30px");
+		// 			myDiv.css("color","green");
+		// 		}
+		// 	);
+		//$(document).ready(function(){})可以加载多次
+		$(function(){
+			console.log("你好！");
+			
+		});
+		$(function(){
+			console.log("很好");
+			
+		});
+		//window.onload只能加载1次，
+		window.onload=function()
+		{
+			console.log("你好吗？");
+			
+
+		};
+		window.onload=function()
+		{
+			console.log("最近好吗？");
+			
+
+		};
+
+	</script>
+</head>
+<body>
+     <div id="myDiv">Hello World!</div>
+	
+</body>
+</html>
