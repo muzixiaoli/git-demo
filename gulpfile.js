@@ -62,7 +62,7 @@ gulp.task("watch",['html','less','js','utilsJs'],function(){
 	gulp.watch(app.srcPath+"**/*.html",['html']);
 	gulp.watch(app.srcPath+"**/*.less",['less']);
 	gulp.watch(app.srcPath+"js/**/*.js",['js']);
-	gulp.watch(app.srcPath+"utilsJs/**/*.less",['less']);
+	gulp.watch(app.srcPath+"utilJs/**/*.js",['utilJs']);
 })
 //浏览器同步静态服务器
 //gulp 默认启动服务
@@ -72,6 +72,6 @@ gulp.task("default",['watch'],function(){
 		server:{
 			baseDir:app.distPath
 		},
-		port:8080
+		port:8888
 	});
 });
